@@ -82,7 +82,12 @@
             <li><a href="#">Termini</a></li>
           </ul>
       </div>
-      <div>qui il footer 2</div>
+      <div>
+      <select id="lang">
+        <option value="it">Italiano</option>
+        <option value="esp">Spanish</option>
+      </select>
+      </div>
     </div>
   </div>
 
