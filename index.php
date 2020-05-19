@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="dist/css/main.css">
+  
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>php google faq | Francesco Scarniglia</title>
 </head>
@@ -18,7 +18,7 @@ file is ok
 
 
 
-  <script src='dist/js/main.js'>
+
   </script>
 </body>
 </html>
