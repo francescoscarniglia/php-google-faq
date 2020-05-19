@@ -43,9 +43,10 @@
   ];
 
   ?>
-  <header id=main-header>
+  <header id="main-header">
   <div class="logo">
-    logo
+      <span><img src="g.png" alt="gLogo"></span>
+      <span><h2>Privacy e termini</h2></span>
   </div>
   <nav class="nav-menu">
     <ul class="main-menu">

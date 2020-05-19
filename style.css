@@ -8,16 +8,30 @@ body {
   font-size: sans-sarif;
   background: lightgreen;
 }
-
+/*%%%%%%%%%%%%%%%%%%%%%%%%%
+          header
+ %%%%%%%%%%%%%%%%%%%%%%%%%*/
 header#main-header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   width: 100%;
   height: 100px;
   background: green;
   position: fixed;
+  padding:0px 20px;
 }
+/*---------------------------
+          header > brand
+ ----------------------------*/
+.logo span {
+  display: inline-flex;
+  vertical-align: middle;
+
+}
+/*---------------------------
+          header > nav
+ ----------------------------*/
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -25,10 +39,12 @@ header#main-header {
 .main-menu,
 .right-menu {
   display: flex;
-  margin: 0 10px;
   list-style:none;
+  padding: 20px 0px 10px 0px;
 }
-
+/*%%%%%%%%%%%%%%%%%%%%%%%%%
+      central content
+ %%%%%%%%%%%%%%%%%%%%%%%%%*/
 .main-content {
   padding-top: 120px;
   display: flex;
@@ -37,6 +53,9 @@ header#main-header {
     width: 800px;
 }
 
+/*%%%%%%%%%%%%%%%%%%%%%%%%%
+          footer
+ %%%%%%%%%%%%%%%%%%%%%%%%%*/
 .main-footer {
   height: 40px;
   background: red;
