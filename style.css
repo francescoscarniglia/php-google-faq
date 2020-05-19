@@ -5,60 +5,136 @@
 }
 
 body {
-  font-size: sans-sarif;
-  background: lightgreen;
+  font-family: 'Roboto', sans-serif;
+  color : gray;
 }
+
+.container {
+  margin: auto;
+  width: 960px;
+}
+
+a {
+  text-decoration: none;
+  color : gray;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  color: #000:
+}
+
+p {
+  text-align: justify;
+  padding: 10px 0px;
+}
+
 /*%%%%%%%%%%%%%%%%%%%%%%%%%
-          header
+    header
  %%%%%%%%%%%%%%%%%%%%%%%%%*/
+
 header#main-header {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
   width: 100%;
   height: 100px;
-  background: green;
+  background: #fff;
   position: fixed;
   padding:0px 20px;
+  border-bottom: 1px solid gray;
 }
+
 /*---------------------------
-          header > brand
+    header > brand
  ----------------------------*/
 .logo span {
   display: inline-flex;
   vertical-align: middle;
 
 }
+
 /*---------------------------
-          header > nav
+    header > nav
  ----------------------------*/
 .nav-menu {
   display: flex;
   justify-content: space-between;
 }
-.main-menu,
+
+.main-menu ,
 .right-menu {
   display: flex;
-  list-style:none;
-  padding: 20px 0px 10px 0px;
+  padding: 20px 0px 0px;
 }
+
+.main-menu ,
+.right-menu,
+.footer-menu
+{
+  list-style:none;
+}
+/*---------------------------
+    header > nav > links
+    footer > links
+ ----------------------------*/
+.main-menu a,
+.right-menu a {
+  font-weight: 500;
+}
+
+.footer-menu a {
+  font-weight: 100;
+  font-size: .8em;
+}
+
+.main-menu li,
+.right-menu li {
+  height: 30px;
+}
+
+.main-menu li {
+  margin: 0px 20px;
+}
+
+.footer-menu li {
+  margin: 0px 10px;
+}
+
+.main-menu li:first-child,
+.footer-menu li:first-child{
+  margin: 0px;
+}
+
+.main-menu a.active {
+  border-bottom: 4px solid #3367d6;
+  color: #3367d6;
+}
+
 /*%%%%%%%%%%%%%%%%%%%%%%%%%
-      central content
+    central content
  %%%%%%%%%%%%%%%%%%%%%%%%%*/
 .main-content {
   padding-top: 120px;
   display: flex;
   flex-direction: column;
   margin: auto;
-    width: 800px;
 }
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%
-          footer
+    footer
  %%%%%%%%%%%%%%%%%%%%%%%%%*/
 .main-footer {
-  height: 40px;
-  background: red;
-  width: 100%;
   display: flex;
+  height: 40px;
+  background: #eee;
+  padding: 10px 0px;
+}
+
+.main-footer .container{
+  display: flex;
+  justify-content: space-between;
 }

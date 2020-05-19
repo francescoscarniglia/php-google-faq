@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>php google faq | Francesco Scarniglia</title>
@@ -46,34 +47,44 @@
   <header id="main-header">
   <div class="logo">
       <span><img src="g.png" alt="gLogo"></span>
-      <span><h2>Privacy e termini</h2></span>
+      <span><h2><a href="#">Privacy e termini</a></h2></span>
   </div>
   <nav class="nav-menu">
     <ul class="main-menu">
-      <li>Introduzione</li>
-      <li>Norme sulla privacy</li>
-      <li>Termini di servizio</li>
-      <li>Tecnologie</li>
-      <li class="active">Domande frequenti</li>
+      <li><a href="#">Introduzione</a></li>
+      <li><a href="#">Norme sulla privacy</a></li>
+      <li><a href="#">Termini di servizio</a></li>
+      <li><a href="#">Tecnologie</a></li>
+      <li ><a href="#" class="active">Domande frequenti</a></li>
     </ul>
     <ul class="right-menu">
-      <li>Account google</li>
+      <li><a href="#">Account google</a></li>
     </ul>
   </nav>
   </header>
 
-    <main class="main-content">
+    <main class="main-content container">
       <?php foreach ($faqs as $faq){?>
         <div>
-          <h2> <?php echo $faq["question"] ?></h2>
+          <h3> <?php echo $faq["question"] ?></h3>
           <p><?php echo $faq["answer"] ?></p>
         </div>
       <?php } ?>
     </main>
 
-  <footer class="main-footer">
-  qui il footer
-  </footer>
+    <div class="main-footer">
+    <div class="container">
+      <div>
+          <ul class="nav-menu footer-menu">
+            <li><a href="#">Google</a></li>
+            <li><a href="#">Tutto su Google</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Termini</a></li>
+          </ul>
+      </div>
+      <div>qui il footer 2</div>
+    </div>
+  </div>
 
 </body>
 </html>
